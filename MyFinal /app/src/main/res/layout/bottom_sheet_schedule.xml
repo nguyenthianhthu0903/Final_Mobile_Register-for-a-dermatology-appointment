@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:ignore="all">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_50">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Detail"
+            android:textStyle="bold"
+            android:fontFamily="@font/frauncesregular"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50$"
+            android:fontFamily="@font/frauncesregular"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_address_bottom_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/frauncesregular"
+            android:text="Address: 310 Nguyen Thi Thap, Tan Quy, Quan 7."
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="book"
+            android:textSize="20dp"
+            android:fontFamily="@font/frauncesregular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="VisualLintButtonSize"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

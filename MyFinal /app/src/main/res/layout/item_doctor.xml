@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp">
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="170dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rec_pink_border_survey"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="20dp">
+                <ImageView android:id="@+id/iv_avt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_avt_default"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:text="Dr. A"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="122dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/icon_star_2"/>
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="122dp"
+                android:layout_marginLeft="85dp"
+                android:text="5"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

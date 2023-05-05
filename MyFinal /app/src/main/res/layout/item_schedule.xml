@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/iv_item_schedule_parent_view"
+            android:layout_width="335dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rec_schedule_1"/>
+
+        <RelativeLayout
+            android:layout_width="74dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/rec_schedule_2">
+
+            <ImageView
+                android:id="@+id/iv_avt"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/avt_doctor" />
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="85dp"
+            android:layout_height="26.11dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/rec_purple_border">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="09:00 am"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/frauncesregular"
+            android:text="Dr. Abcd"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="85dp"
+            android:text="status"
+            android:fontFamily="@font/frauncesregular"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/icon_more_vert" />
+    </FrameLayout>
+</LinearLayout>

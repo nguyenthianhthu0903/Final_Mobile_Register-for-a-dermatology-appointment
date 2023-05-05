@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- welcome colors -->
+
+	<color name="colorPrimary">#008577</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="colorAccent">#D81B60</color>
+	<color name="purple_200">#FFBB86FC</color>
+	<color name="purple_500">#FF6200EE</color>
+	<color name="purple_700">#FF3700B3</color>
+	<color name="teal_200">#95BF96</color>
+	<color name="teal_700">#FF018786</color>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="_bg__welcome_ek2_color">#FFFFFF</color>
+	<color name="sign_in_color">#000000</color>
+	<color name="purple_100">#ddb8d9</color>
+	<color name="pink_100">#E8CBE5</color>
+	<color name="gray_51">#faf7ff</color>
+	<color name="black_900_5e">#5e000000</color>
+	<color name="blue_700">#2f89c9</color>
+	<color name="indigo_50">#e1e7f9</color>
+	<color name="indigo_60">#e7e3f0</color>
+	<color name="indigo_50_8e">#8ee2e8fa</color>
+	<color name="black_900_3f">#3f000000</color>
+	<color name="black_900_91">#9C000000</color>
+	<color name="gray_50">#f9f6ff</color>
+	<color name="deep_purple_200">#a798d4</color>
+	<color name="gray_100">#eff2fc</color>
+	<color name="indigo_300">#6495b8</color>
+	<color name="gray_400">#c1bfc5</color>
+	<color name="bluegray_100">#dac9d9</color>
+	<color name="white_A700_00">#00ffffff</color>
+	<color name="indigo_100">#c1b7e1</color>
+	<color name="black_900">#000000</color>
+	<color name="indigo_50_00">#00e1e7f9</color>
+	<color name="blue_400">#4596f5</color>
+	<color name="purple_A200">#e348d3</color>
+	<color name="purple_A100">#ea6aec</color>
+	<color name="white_A700">#ffffff</color>
+	<color name="pink_400">#e44776</color>
+    <color name="light_blue_100">#F2EEF4</color>
+	<color name="light_blue_200">#a5dff8</color>
+	<color name="purple_2">#77D8B5F1</color>
+	<color name="blue_100">#BDD3FE</color>
+	<color name="gray">#FBFBFB</color>
+	<color name="deep_purple">#705E95</color>
+	<color name="yellow">#FFF9E8</color>
+	<color name="light_blue">#8AECEDFF</color>
+</resources>

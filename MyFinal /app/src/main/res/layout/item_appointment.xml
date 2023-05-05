@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:ignore="all">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+                <ImageView
+                    android:layout_width="320dp"
+                    android:layout_height="127dp"
+                    android:background="@drawable/rec_schedule_1"/>
+
+                <FrameLayout
+                    android:layout_width="74dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rec_schedule_2"/>
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13"
+                        android:fontFamily="@font/frauncesregular"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="3dp"/>
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mon"
+                        android:fontFamily="@font/frauncesregular"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="40dp"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="85dp"
+                    android:layout_height="26.11dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/rec_purple_border">
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="12:30 pm"
+                        android:fontFamily="@font/frauncesregular"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"/>
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Dr. Abcd"
+                    android:textSize="24dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="85dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="status"
+                    android:textStyle="italic" />
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginLeft="265dp"
+                    android:src="@drawable/icon_more_vert"/>
+            </FrameLayout>
+
+</LinearLayout>

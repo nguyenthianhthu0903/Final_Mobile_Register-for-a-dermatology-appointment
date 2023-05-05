@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <FrameLayout
+        android:id="@+id/frame_rating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/pacifico"
+                android:text="Rating doctor"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_arrow_back" />
+
+            <ImageView
+                android:id="@+id/btnDownload"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="@dimen/_43pxh"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rec_white_border_2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_notice" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_avt"
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_doctor_7"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="22dp"/>
+
+            <RatingBar
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="160dp"
+                android:numStars="5"
+                android:stepSize="1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="230dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rec_white_border_black_4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your comment"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/et_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Type here"
+                    android:maxLength="50"
+                    android:fontFamily="@font/frauncesregular"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="460dp"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

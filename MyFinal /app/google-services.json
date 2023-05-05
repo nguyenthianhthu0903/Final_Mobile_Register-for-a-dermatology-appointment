@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "298197134241",
+    "project_id": "infra-earth-312017",
+    "storage_bucket": "infra-earth-312017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298197134241:android:eb2cd28233018c10aef9e0",
+        "android_client_info": {
+          "package_name": "com.example.myfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298197134241-1crh57q4857uhphq8g8e8d9t3oo0gos5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myfinal",
+            "certificate_hash": "bda2fb4a7add6ad23173fa7aafcc190c118095a9"
+          }
+        },
+        {
+          "client_id": "298197134241-7p54og29tkggdfirhubjft9at31dh12u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ14gfGbEnn8o4cbDRtc9XbwlLwmfVPzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298197134241-7p54og29tkggdfirhubjft9at31dh12u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

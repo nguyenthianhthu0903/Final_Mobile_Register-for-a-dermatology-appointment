@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <FrameLayout
+        android:id="@+id/frame_rating"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rec_white_border_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:text="Reviews"
+            android:fontFamily="@font/frauncesregular"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/icon_star" />
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="62dp"
+            android:text="4.9"
+            android:fontFamily="@font/frauncesregular"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_quantity_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="166dp"
+            android:layout_marginTop="62dp"
+            android:text="(27)"
+            android:fontFamily="@font/frauncesregular"
+            android:textSize="18dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Your rating "
+                android:fontFamily="@font/pacifico"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_arrow_back"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

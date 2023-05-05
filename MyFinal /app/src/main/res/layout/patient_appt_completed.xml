@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <FrameLayout
+        android:id="@+id/frame_completed"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Appointment"
+                android:fontFamily="@font/pacifico"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_arrow_back"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp">
+            <FrameLayout
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rec_pink_11_border">
+                <FrameLayout
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="125dp"
+                    android:background="@drawable/rec_gradient_lightblue_purple_10">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_upcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="Upcoming"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="142dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="Completed"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tv_canceled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="265dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="Canceled"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+            </FrameLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <FrameLayout
+            android:id="@+id/frame_no_document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_bg_no_document_2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="No completed appointment"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="18dp"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

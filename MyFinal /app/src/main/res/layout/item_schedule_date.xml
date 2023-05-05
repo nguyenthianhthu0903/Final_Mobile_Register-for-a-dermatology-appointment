@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="all"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/parentView"
+        android:layout_width="74dp"
+        android:layout_height="76dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/bg_item_schedule_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rec_schedule_2" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/frauncesregular"
+            android:text="14"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/frauncesregular"
+            android:text="Tue"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </FrameLayout>
+</LinearLayout>

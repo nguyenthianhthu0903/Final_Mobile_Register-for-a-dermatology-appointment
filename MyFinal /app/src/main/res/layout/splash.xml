@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	tools:ignore="all">
+
+	<FrameLayout android:id="@+id/logo"
+		android:layout_marginTop="200dp"
+		android:layout_marginStart="121dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		>
+
+		<TextView android:id="@+id/care"
+			android:fontFamily="@font/vibur"
+			android:textSize="38.43sp"
+			android:textColor="@color/sign_in_color"
+			android:layout_marginLeft="81dp"
+			android:layout_marginTop="17dp"
+			android:layout_width="108.21537208557dp"
+			android:layout_height="82.215372085571dp"
+			android:text="@string/care_string"
+			 />
+
+		<TextView android:id="@+id/t"
+			android:fontFamily="@font/vibur"
+			android:textSize="46.12sp"
+			android:textColor="@color/sign_in_color"
+			android:layout_marginLeft="59dp"
+			android:layout_marginTop="0dp"
+			android:layout_width="78.058446884155dp"
+			android:layout_height="98.058446884155dp"
+			android:text="@string/t_string"
+			 />
+
+		<ImageView android:id="@+id/exclude"
+			android:src="@drawable/logo01"
+			android:contentDescription="exclude"
+			 android:layout_marginStart="0dp"
+			android:layout_marginTop="12dp"
+			android:layout_width="63.12dp"
+			android:layout_height="53.37dp" />
+
+		<ImageView android:id="@+id/intersect"
+			android:src="@drawable/logo03"
+			android:contentDescription="intersect"
+			 android:layout_marginStart="20dp"
+			android:layout_marginTop="20dp"
+			android:layout_width="21.18dp"
+			android:layout_height="43.94dp" />
+
+		<ImageView android:id="@+id/subtract"
+			android:src="@drawable/logo07"
+			android:contentDescription="subtract"
+			 android:layout_marginStart="21dp"
+			android:layout_marginTop="20dp"
+			android:layout_width="42.18dp"
+			android:layout_height="44.9dp" />
+
+		<ImageView android:id="@+id/vital_signs"
+			android:src="@drawable/logo_08"
+			android:contentDescription="vital_signs"
+			 android:layout_marginStart="38dp"
+			android:layout_marginTop="33dp"
+			android:layout_width="20.75dp"
+			android:layout_height="18.45dp" />
+
+	</FrameLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="300dp"
+		android:text="Always help your skin"
+		android:fontFamily="@font/pacifico"
+		android:textAlignment="center"
+		android:textSize="30dp"
+		android:textColor="@color/purple_100"/>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:layout_marginTop="400dp"
+		android:src="@drawable/img_skin_2"/>
+
+</RelativeLayout>

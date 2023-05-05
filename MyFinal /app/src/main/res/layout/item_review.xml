@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:ignore="all">
+
+
+    <FrameLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rec_border_black_5">
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="25dp">
+            <ImageView
+                android:id="@+id/iv_avt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_avt_default"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/frauncesregular"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/frauncesregular"
+            android:text="04-04-2022 15:00"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rec_yellow_border">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_star" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="5.0"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="So good!"
+            android:fontFamily="@font/frauncesregular"
+            android:textColor="@color/black"/>
+    </FrameLayout>
+</LinearLayout>

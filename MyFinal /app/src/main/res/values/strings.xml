@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- welcome strings -->
+
+	<string name="app_name">Page 2</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="sign_in_string">Sign in</string>
+	<string name="sign_up_string">Sign up</string>
+	<string name="continue_with_google_string">Continue with Google</string>
+	<string name="care_string">Care</string>
+	<string name="t_string">T</string>
+
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_normal_25_age">Normal | 25 Age</string>
+<string name="lbl_wrinkles">Wrinkles</string>
+<string name="lbl_skin_problem">Skin problem</string>
+<string name="msg_don_t_have_an_a">Don\u2019t have an account?</string>
+<string name="msg_confirm_passwor">Confirm password</string>
+<string name="lbl_t">T</string>
+<string name="lbl_skin_detail">Skin Detail</string>
+<string name="lbl_28">28</string>
+<string name="lbl_skin_age">Skin Age</string>
+<string name="lbl_medicines">Medicines</string>
+<string name="lbl_home">Home</string>
+<string name="msg_already_have_an">Already have an account?</string>
+<string name="lbl_acne">Acne</string>
+<string name="lbl_intermediate">Intermediate</string>
+<string name="lbl_no_smoking">No smoking</string>
+<string name="lbl_phone_number">Phone number</string>
+<string name="lbl_create_account">Create account</string>
+<string name="lbl_sign_in">Sign in</string>
+<string name="lbl_smoking">Smoking</string>
+<string name="lbl_doctors">Doctors</string>
+<string name="lbl_13">13</string>
+<string name="lbl_sign_up">Sign up</string>
+<string name="lbl_care">Care</string>
+<string name="msg_forgot_password">Forgot password?</string>
+<string name="lbl_mar">Mar</string>
+<string name="msg_more_than_8_hou">More than 8 hours</string>
+<string name="lbl_chatting">Chatting</string>
+<string name="lbl_sagging">Sagging</string>
+<string name="lbl_email">Email</string>
+<string name="lbl_90_100">90/100</string>
+<string name="lbl_pigmentation">Pigmentation</string>
+<string name="lbl_redness">Redness</string>
+<string name="lbl_schedule">Schedule</string>
+<string name="lbl_translucency">Translucency</string>
+<string name="lbl_hi">Hi,</string>
+<string name="lbl_3">3</string>
+<string name="lbl_oil_balance">Oil balance</string>
+<string name="lbl_sleeping">Sleeping</string>
+<string name="lbl_my_appointment">My appointment</string>
+<string name="lbl_services">Services</string>
+<string name="lbl_monday">Monday</string>
+<string name="msg_skin_health_sur">Skin health surey</string>
+<string name="lbl_pores">Pores</string>
+<string name="lbl_anti_aging">Anti-aging</string>
+<string name="lbl_suzy">Suzy</string>
+<string name="lbl_check_skin">Check skin</string>
+<string name="lbl_my_skin">My Skin</string>
+<string name="lbl_see_detail">See detail</string>
+<string name="msg_continue_with_g">Continue with Google</string>
+<string name="lbl_skin_tone">Skin Tone</string>
+<string name="msg_today_24_03_20">Today, 24/03/2023</string>
+<string name="msg_skin_health_sco">Skin health score 90/100</string>
+<string name="lbl_get_one">Get One</string>
+<string name="lbl_hydration">Hydration</string>
+<string name="lbl_password">Password</string>
+<string name="lbl_discover">Discover</string>
+<string name="lbl_receptions">Receptions</string>
+<string name="lbl_moisturizing">Moisturizing</string>
+<string name="lbl_uv_protection">UV Protection</string>
+<string name="lbl_account">Account</string>
+
+
+
+</resources>

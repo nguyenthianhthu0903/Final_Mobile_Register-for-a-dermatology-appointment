@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <FrameLayout
+        android:id="@+id/frame_schedule"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp">
+            <ImageView
+                android:id="@+id/frame"
+                android:layout_width="200dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rec_pink_border_survey"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/img_doctor_3"/>
+            <FrameLayout
+                android:id="@+id/fl_history"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:layout_alignRight="@+id/frame"
+                android:layout_marginTop="95dp"
+                android:background="@drawable/rec_blue_border_left">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="History"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="202dp">
+            <ImageView
+                android:id="@+id/frame"
+                android:layout_width="200dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rec_blue_border_survey"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="190dp"
+                android:src="@drawable/img_bg_schedule"/>
+            <FrameLayout
+                android:id="@+id/fl_select_schedule"
+                android:layout_width="110dp"
+                android:layout_height="50.11dp"
+                android:layout_alignLeft="@+id/frame"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/rec_pink_border_right">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="Select schedule"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/linearRowcare"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="74.39dp"
+                android:layout_height="36.61dp"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:fontFamily="@font/pacifico"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Schedule"/>
+
+            <ImageView
+                android:id="@+id/btnDownload"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="@dimen/_43pxh"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rec_white_border_2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_notice"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="362dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_my_appt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="My appointments"
+                    android:fontFamily="@font/pacifico"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"/>
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_no_document"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/img_bg_no_document"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="No appointment"
+                android:fontFamily="@font/frauncesregular"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

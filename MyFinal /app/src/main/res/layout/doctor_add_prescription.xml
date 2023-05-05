@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_add_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/pacifico"
+                android:text="Prescription"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_arrow_back" />
+
+            <ImageView
+                android:id="@+id/btnDownload"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="@dimen/_43pxh"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rec_white_border_2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_notice" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_avt"
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_patient"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="130dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="130dp"
+                android:text="Phone"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginStart="20dp"
+                android:text="Medicine name: "
+                android:fontFamily="@font/frauncesregular"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginStart="20dp"
+                android:text="Dosage: "
+                android:fontFamily="@font/frauncesregular"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_medicine_name"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="100dp"
+                android:hint="Enter here"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/et_dosage"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="140dp"
+                android:hint="Enter here"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/btn_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:text="insert"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:layout_gravity="center_horizontal"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+    </ScrollView>
+</LinearLayout>

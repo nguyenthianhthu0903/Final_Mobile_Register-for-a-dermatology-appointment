@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="all">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_appt_detail"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Appointment detail "
+                android:fontFamily="@font/pacifico"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_arrow_back"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:id="@+id/iv_avt"
+                    android:layout_height="80dp"
+                    android:layout_width="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_patient"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="130dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="130dp"
+                android:text="Phone"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="130dp"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:fontFamily="@font/frauncesregular"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="30dp"
+                android:text="Status:"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <CheckBox
+                android:id="@+id/cb_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="120dp"
+                android:text="completed  "
+                android:fontFamily="@font/frauncesregular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="30dp"
+                android:text="Skin health:"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/et_conclusion"
+                style="@style/EditText"
+                android:background="@drawable/rec_edit_text"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="190dp"
+                android:hint="Conclusion"
+                android:textColorHint="@color/indigo_100"
+                android:textStyle="bold"
+                android:fontFamily="@font/frauncesregular"
+                android:paddingStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="30dp"
+                android:text="Skin detail:"
+                android:fontFamily="@font/pacifico"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="290dp"
+                tools:ignore="RtlHardcoded">
+                <ImageView android:id="@+id/iv_skin"
+                           android:layout_height="@dimen/_80pxh"
+                           android:layout_width="@dimen/_80pxh"
+                           android:scaleType="centerCrop"
+                           tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/iv_change_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="370dp"
+                android:layout_marginLeft="57dp"
+                android:src="@drawable/icon_camera"/>
+
+            <TextView
+                android:id="@+id/tv_skinType_Age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="285dp"
+                android:text="Skin type | Age:"
+                android:fontFamily="@font/frauncesregular"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_skinType_Age"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="233dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="275dp"
+                android:hint="Ex: Normal | 25"
+                android:textAlignment="center"
+                android:fontFamily="@font/frauncesregular"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="320dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Skin Age"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_skinAge"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="340dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="Ex: 28"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="320dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Skin Tone"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_skinTone"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="340dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="Ex: Intermediate"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="410dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Wrinkles"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_wrinkles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="400dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="__/100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="410dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Sagging"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_sagging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="400dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="__/100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="450dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Pigmentation"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_pigmentation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="440dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="__/100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="450dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Pores"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_pores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="440dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="__/100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="490dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Translucency"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_translucency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="480dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="__/100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="490dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Redness"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_redness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="480dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="__/100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="530dp"
+                android:fontFamily="@font/frauncesregular"
+                android:text="Hydration"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_hydration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="520dp"
+                android:fontFamily="@font/frauncesregular"
+                android:hint="__/100"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="570dp"
+                android:text="Update"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

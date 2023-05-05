@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/frameBottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        <View
+            android:background="@drawable/rec_pink_10_border"
+            android:id="@+id/v_discover"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_60pxh"
+            android:layout_marginEnd="@dimen/_90pxh"
+            android:layout_marginStart="@dimen/_90pxh"
+            android:layout_marginTop="0dp"
+            android:layout_width="@dimen/_60pxh"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_menu"/>
+
+        </FrameLayout>
+
+</LinearLayout>

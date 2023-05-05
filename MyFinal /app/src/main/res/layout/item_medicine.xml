@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rec_white_border_black_4">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="40dp"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_avt"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_width="@dimen/_40pxh"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/img_medicine_1"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:hint="Name"
+            android:fontFamily="@font/frauncesregular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/tv_dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="100dp"
+            android:hint="Quantity"
+            android:background="@color/white"
+            android:fontFamily="@font/frauncesregular"
+            android:textSize="16dp"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

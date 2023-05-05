@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:ignore="all">
+
+    <FrameLayout
+        android:id="@+id/frame_account"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        tools:ignore="InefficientWeight">
+
+        <LinearLayout
+            android:id="@+id/linearRowcare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="74.39dp"
+                android:layout_height="36.61dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:background="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:fontFamily="@font/pacifico"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="60dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Account"
+                 />
+
+            <ImageView
+                android:id="@+id/btnDownload"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="@dimen/_43pxh"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:background="@drawable/rec_white_border_2"
+                android:paddingHorizontal="@dimen/_2pxh"
+                android:paddingVertical="@dimen/_2pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_notice"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="52dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="50dp"
+                android:layout_marginTop="20dp">
+                <ImageView android:id="@+id/iv_avt"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_avt_default"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="125dp"
+                android:layout_centerHorizontal="true"
+                android:text="Name"
+                android:fontFamily="@font/frauncesregular"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/tv_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:layout_centerHorizontal="true"
+                android:text="jennie@gmail.com"
+                android:fontFamily="@font/frauncesregular"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_edit"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="220dp"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_edit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="Edit profile"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_log_out"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="280dp"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/icon_logout"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:fontFamily="@font/frauncesregular"
+                    android:text="Log out"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

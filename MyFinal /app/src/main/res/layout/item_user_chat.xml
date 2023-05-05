@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rec_white_border_black_4">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="40dp"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_avt"
+                android:layout_height="@dimen/_60pxh"
+                android:layout_width="@dimen/_60pxh"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_doctor_7"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="90dp"
+            android:text="Name"
+            android:fontFamily="@font/frauncesregular"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </FrameLayout>
+
+</RelativeLayout>
